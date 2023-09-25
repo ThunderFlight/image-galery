@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    padding: 25px;
+   
+    .headerTitle{
+        font-family: 'Martian Mono', monospace;
+        color: white;
+    }
+    .searchImage{
+        border: 0px;
+        border-radius: 7px;
+        width: 200px;
+        height: 30px;
+        padding: 4px;
+    }
+}
+.main{
+    background-color: black;
+    height: 100vh;
+}
