@@ -2,27 +2,43 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-color: black;
+}
 .header{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    background-color: black;
     padding: 25px;
-   
+    margin-bottom: 30px;
     .headerTitle{
         font-family: 'Martian Mono', monospace;
         color: white;
     }
-    .searchImage{
-        border: 0px;
-        border-radius: 7px;
-        width: 200px;
-        height: 30px;
-        padding: 4px;
+    .inputWrapper{
+        .searchImage{
+            border: 0px;
+            border-radius: 7px;
+            width: 200px;
+            height: 30px;
+            padding: 4px;
+        }
+        .searchImageButton{
+            width: 30px;
+            height: 40px;
+        }
     }
 }
 .main{
-    background-color: black;
-    height: 100vh;
+    height: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 30px;
+    .galleryImage{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
 }
