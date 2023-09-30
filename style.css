@@ -25,6 +25,20 @@ body{
             height: 30px;
             padding: 4px;
         }
+        .crossImageButton{
+            position: absolute;
+            border: 0px;
+            background-color: aliceblue;
+            right: 40px;
+            top: 2px;
+            width: 30px;
+            height: 36px;
+            cursor: pointer;
+            display: block;
+        }
+        .crossImageButtonClosed{
+            display: none;
+        }
         .searchImageButton{
             position: absolute;
             border: 0px;
@@ -34,12 +48,12 @@ body{
             width: 30px;
             height: 36px;
             cursor: pointer;
-            .loop{
-                width: 27px;
-                height: 27px;
+            
+        }.loop{
+                width: 17px;
+                height: 17px;
                    
             }
-        }
     }
 }
 .main{

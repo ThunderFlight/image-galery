@@ -10,10 +10,6 @@ async function getDataGallary(value) {
     let h1 = document.createElement("h1");
     h1.innerText = ":( don`t find anything";
     h1.style.color = "gray";
-    main.style.display='flex'
-    main.style.justifyContent='center'
-    main.style.alignItems='center'
-    main.style.height='65vh'
     return main.appendChild(h1);
   } else {
     data.results.map((item) => {
@@ -25,6 +21,13 @@ async function getDataGallary(value) {
   }
   return data;
 }
+document.querySelector(".searchImage").focus();
+document
+  .querySelector('.crossImageButton')
+  .addEventListener("click", () => {
+    document.querySelector(".searchImage").value = "";
+    getDataGallary()
+  });
 getDataGallary();
 document.querySelector(".searchImage").addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
@@ -38,3 +41,10 @@ document
     event.preventDefault();
     getDataGallary(document.querySelector(".searchImage").value);
   });
+
+// document.querySelector('.searchImage').addEventListener('change',(event)=>{
+//   if(event.target.value !== ''){
+//     document.querySelector('#cross').classList.remove('crossImageButtonClosed')
+//     document.querySelector('#cross').className='crossImageButton'
+//   }
+// })
