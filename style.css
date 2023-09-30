@@ -17,6 +17,7 @@ body{
         color: white;
     }
     .inputWrapper{
+        position: relative;
         .searchImage{
             border: 0px;
             border-radius: 7px;
@@ -25,8 +26,19 @@ body{
             padding: 4px;
         }
         .searchImageButton{
+            position: absolute;
+            border: 0px;
+            background-color: aliceblue;
+            right: 5px;
+            top: 2px;
             width: 30px;
-            height: 40px;
+            height: 36px;
+            cursor: pointer;
+            .loop{
+                width: 27px;
+                height: 27px;
+                   
+            }
         }
     }
 }
